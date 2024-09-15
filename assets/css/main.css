@@ -1,0 +1,903 @@
+header {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(26, 3, 28) 58%, rgb(61, 48, 107) 98%);
+}
+header .topBox {
+  width: 90%;
+  padding: 20px 0px;
+  margin: 0 auto;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+header .topBox .logoTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+header .topBox .logoTop a {
+  color: #fff;
+  font-size: 15px;
+}
+header .topBox .logoTop a img {
+  max-width: 50px;
+}
+header .topBox .navBtnTop {
+  display: flex;
+}
+header .topBox .navBtnTop a {
+  border: none;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 17px 35px;
+  color: #fff;
+  display: inline-block;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(149, 100, 233) 0%, rgb(49, 34, 98) 87%);
+}
+header .topBox .navBtnTop .topIcon {
+  margin: 10px;
+}
+header .topBox .navBtnTop .topIcon i {
+  color: #fff;
+  font-size: 20px;
+}
+header .container {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+header .container .logo a {
+  color: #fff;
+  font-size: 15px;
+}
+header .container .logo a img {
+  max-width: 50px;
+}
+header .container .navMenu ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .navMenu ul li {
+  margin: 14px;
+}
+header .container .navMenu ul li a {
+  color: #fff;
+  position: relative;
+}
+header .container .navMenu ul li a::before {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(84, 48, 146) 0%, rgb(50, 35, 100) 59%);
+  transform: 0px;
+  transition: 0.5s ease;
+}
+header .container .navMenu ul li a:hover::before {
+  width: 100%;
+}
+header .container .navMenu ul li .homeDrop {
+  position: relative;
+  display: flex;
+  width: 60px;
+  gap: 2px;
+}
+header .container .navMenu ul li .homeDrop::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(84, 48, 146) 0%, rgb(50, 35, 100) 79%);
+}
+header .container .navMenu ul li .homeDrop .twoSpan {
+  display: none;
+  width: 10px;
+}
+header .container .navMenu ul li .homeDrop:hover .oneSpan {
+  display: none;
+}
+header .container .navMenu ul li .homeDrop:hover .twoSpan {
+  display: block;
+}
+header .container .navMenu ul li .blogDrop {
+  display: flex;
+  width: 50px;
+  gap: 2px;
+}
+header .container .navMenu ul li .blogDrop .twoSpan {
+  display: none;
+  width: 10px;
+}
+header .container .navMenu ul li .blogDrop:hover .oneSpan {
+  display: none;
+}
+header .container .navMenu ul li .blogDrop:hover .twoSpan {
+  display: block;
+}
+header .container .navBtn a {
+  border: none;
+  width: 120px;
+  height: 50px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 17px 35px;
+  color: #fff;
+  display: inline-block;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(149, 100, 233) 0%, rgb(49, 34, 98) 87%);
+}
+
+footer {
+  background-color: #0F0715;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+footer .container a {
+  color: #fff;
+  font-size: 15px;
+}
+footer .container a img {
+  max-width: 60px;
+}
+footer .container ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .container ul li {
+  margin: 17px;
+}
+footer .container ul li a {
+  color: #fff;
+  position: relative;
+  font-weight: 700;
+}
+footer .container ul li a::before {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(84, 48, 146) 0%, rgb(50, 35, 100) 59%);
+  transform: 0px;
+  transition: 0.5s ease;
+}
+footer .container ul li a:hover::before {
+  width: 100%;
+}
+footer p {
+  color: #7746DB;
+  cursor: pointer;
+  transition: 1s;
+}
+footer p:hover {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  header .container {
+    display: none;
+  }
+  header .topBox {
+    display: flex;
+  }
+  header .topBox .navBtnTop a {
+    display: flex !important;
+  }
+  #heroSection .heroImg img {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #blogsSection .row .blogsTextAndPhoto {
+    margin: 20px 0px;
+  }
+  #blogsSection .row .blogsTextAndPhoto img {
+    height: auto;
+  }
+  #sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .logoAndPhoto img {
+    width: 40px !important;
+  }
+  #sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .clentsInfoTextBoxs p {
+    font-size: 10px;
+  }
+  #sectionRecent .row .photoBoxAllInfo .photoBoxs {
+    margin: 20px 0px !important;
+  }
+  #heroSection .heroImg img {
+    width: 70% !important;
+  }
+  header .topBox .navBtnTop a {
+    display: none !important;
+  }
+  #programmingSection .programminText h1 {
+    font-size: 30px !important;
+  }
+  #programmingSection .programminText i {
+    font-size: 20px !important;
+  }
+  #heroSection .row .heroTextAllBox h1 {
+    font-size: 40px !important;
+  }
+  #heroSection .row .heroTextAllBox .heroBtn button {
+    margin: 20px 0px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tj-theme-primary) var(--tj-theme-secondary);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#heroSection {
+  position: relative;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(26, 3, 28) 58%, rgb(61, 48, 107) 98%);
+}
+#heroSection .buttonIcon {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  position: fixed;
+  z-index: 7777;
+}
+#heroSection .buttonIcon i {
+  transition: 1s;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  border: solid 2px #7e4cd3;
+  color: #7e4cd3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#heroSection .buttonIcon i:hover {
+  border: 2px solid #fff;
+  color: #fff;
+}
+#heroSection .row .heroTextAllBox {
+  width: 100%;
+}
+#heroSection .row .heroTextAllBox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+#heroSection .row .heroTextAllBox h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #623da2;
+}
+#heroSection .row .heroTextAllBox p {
+  font-size: 20px;
+  width: 85%;
+  margin-bottom: 0;
+  color: rgb(186, 183, 183);
+}
+#heroSection .row .heroTextAllBox .heroBtn {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+#heroSection .row .heroTextAllBox .heroBtn button {
+  border-radius: 50px;
+  padding: 14px 35px;
+  border: solid 1px #8750F7;
+  background-color: transparent;
+  color: #8750F7;
+  transition: 0.5s;
+}
+#heroSection .row .heroTextAllBox .heroBtn button:hover {
+  background-color: #8750F7;
+  color: #fff;
+}
+#heroSection .row .heroTextAllBox .heroBtn .heroIcons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#heroSection .row .heroTextAllBox .heroBtn .heroIcons a {
+  color: #fff;
+  margin: 0px 7px;
+  border-radius: 50%;
+}
+#heroSection .row .heroTextAllBox .heroBtn .heroIcons a i {
+  color: #8750F7;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #8750F7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+#heroSection .row .heroTextAllBox .heroBtn .heroIcons a:hover {
+  background-color: #8750F7;
+}
+#heroSection .row .heroTextAllBox .heroBtn .heroIcons a:hover i {
+  color: #fff;
+}
+#heroSection .heroImg {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#heroSection .heroImg img {
+  border: 2px solid #351870;
+  border-radius: 38px;
+  transform: rotate(4.29deg);
+  transition: 0.5s;
+  cursor: pointer;
+  width: 100%;
+}
+#heroSection .heroImg img:hover {
+  transform: rotate(0deg);
+}
+#heroSection .textHeroBox {
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+#heroSection .textHeroBox h1 {
+  font-size: 70px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+#heroSection .textHeroBox p {
+  margin: 0;
+  font-size: 20px;
+}
+
+#servicesSection {
+  background-color: #050709;
+}
+#servicesSection .container .setvicesTextHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#servicesSection .container .setvicesTextHeader h1 {
+  font-size: 45px;
+  color: #8750F7;
+}
+#servicesSection .container .setvicesTextHeader p {
+  width: 50%;
+  color: #fff;
+}
+#servicesSection .container:hover:hover .bgColor {
+  background-color: transparent;
+}
+#servicesSection .container .bgColor {
+  background-color: #673CBF;
+}
+#servicesSection .container .row {
+  padding: 30px 0px;
+  transition: 1s;
+  cursor: pointer;
+  position: relative;
+}
+#servicesSection .container .row::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #391e6e;
+  width: 100%;
+  top: 100%;
+}
+#servicesSection .container .row:hover {
+  background-color: #673CBF;
+}
+#servicesSection .container .row:hover .desingBox p {
+  color: #fff;
+}
+#servicesSection .container .row:hover .desingBoxTwo i {
+  color: #fff;
+  transform: rotate(30deg);
+}
+#servicesSection .container .row .desingBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#servicesSection .container .row .desingBox p {
+  font-size: 25px;
+  margin: 0;
+  color: #8750F7;
+  font-weight: 700;
+  margin: 10px;
+}
+#servicesSection .container .row .desingBoxTwo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  justify-content: center;
+}
+#servicesSection .container .row .desingBoxTwo p {
+  width: 80%;
+  font-size: 17px;
+  text-align: center;
+  margin: 0;
+}
+#servicesSection .container .row .desingBoxTwo i {
+  transform: rotate(125deg);
+  font-size: 25px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  color: #8750F7;
+}
+
+#sectionRecent {
+  background-color: #0F0715;
+}
+#sectionRecent .setvicesTextHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#sectionRecent .setvicesTextHeader h1 {
+  font-size: 45px;
+  color: #8750F7;
+}
+#sectionRecent .setvicesTextHeader p {
+  width: 50%;
+  color: #fff;
+}
+#sectionRecent .setvicesTextHeader ul {
+  display: flex;
+  background-color: #000;
+  padding: 0px 10px;
+  border-radius: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#sectionRecent .setvicesTextHeader ul .allText {
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(84, 48, 146) 0%, rgb(50, 35, 100) 79%);
+  height: 45px;
+  width: 60px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+#sectionRecent .setvicesTextHeader ul li {
+  margin: 10px 20px;
+}
+#sectionRecent .setvicesTextHeader ul li a {
+  color: #fff;
+}
+#sectionRecent .row .photoBoxAllInfo {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#sectionRecent .row .photoBoxAllInfo:hover {
+  transition: 1s;
+}
+#sectionRecent .row .photoBoxAllInfo:hover .textBoxsAll {
+  display: flex;
+  animation: animes 1s forwards;
+}
+#sectionRecent .row .photoBoxAllInfo .photoBoxs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sectionRecent .row .photoBoxAllInfo .photoBoxs img {
+  width: 85%;
+}
+#sectionRecent .row .photoBoxAllInfo .textBoxsAll {
+  left: 44px;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(84, 48, 146) 0%, rgb(50, 35, 100) 79%);
+  color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 83%;
+  border-radius: 38px;
+  transform: translateY(10px);
+}
+#sectionRecent .row .photoBoxAllInfo .textBoxsAll:hover .iconBox i {
+  transform: rotate(190deg);
+}
+#sectionRecent .row .photoBoxAllInfo .textBoxsAll .textBoxs p {
+  margin: 0;
+}
+#sectionRecent .row .photoBoxAllInfo .textBoxsAll .iconBox i {
+  transition: 0.5s ease;
+  font-size: 27px;
+  padding: 20px;
+}
+
+@keyframes animes {
+  from {
+    transform: translateY(10px);
+    transition: 0.5s;
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-120px);
+    opacity: 1;
+  }
+}
+#programmingSection {
+  background-color: #050709;
+}
+#programmingSection .programminText {
+  display: flex;
+  align-items: center;
+}
+#programmingSection .programminText i {
+  font-size: 40px;
+  margin: 10px;
+  color: #673CBF;
+}
+#programmingSection .programminText h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ad8dee;
+}
+#programmingSection .programminTextInfo {
+  background-color: #140C1C;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 1s;
+  width: 90%;
+}
+#programmingSection .programminTextInfo:hover {
+  background: linear-gradient(90deg, rgb(188, 106, 224) 0%, rgb(82, 29, 105) 59%, rgb(67, 0, 84) 100%);
+}
+#programmingSection .programminTextInfo:hover h4 {
+  color: #fff;
+}
+#programmingSection .programminTextInfo h4 {
+  color: #673CBF;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+#programmingSection .programminTextInfo h2 {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+#programmingSection .programminTextInfo p {
+  color: #fff;
+}
+
+#logoSection {
+  background-color: #0F0715;
+}
+#logoSection .setvicesTextHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#logoSection .setvicesTextHeader h1 {
+  font-size: 45px;
+  color: #8750F7;
+}
+#logoSection .setvicesTextHeader p {
+  width: 50%;
+  color: #fff;
+}
+#logoSection .row .programingIconsBox {
+  border-radius: 25px;
+  padding: 40px 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#logoSection .row .programingIconsBox:hover .programingIconsPhoto {
+  border: 2px solid #7e4cd3;
+  background-color: #2A1454;
+}
+#logoSection .row .programingIconsBox:hover .programingIconsPhoto img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+#logoSection .row .programingIconsBox:hover .programingIconsPhoto p {
+  filter: grayscale(0);
+}
+#logoSection .row .programingIconsBox .programingIconsPhoto {
+  width: 100%;
+  background-color: #140C1C;
+  margin: 0 auto 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+#logoSection .row .programingIconsBox .programingIconsPhoto img {
+  transition: 0.5s;
+  max-width: 60px;
+  filter: grayscale(100);
+}
+#logoSection .row .programingIconsBox .programingIconsPhoto p {
+  padding-top: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0px;
+  filter: grayscale(100);
+}
+#logoSection .row .programingIconsBox p {
+  color: #7e4cd3;
+  font-weight: 600;
+}
+
+#sectionClient {
+  background-color: #050709;
+}
+#sectionClient .clentsInfoText h1 {
+  font-size: 50px;
+  color: #A880F9;
+  margin-bottom: 20px;
+}
+#sectionClient .clentsInfoText p {
+  width: 75%;
+  font-weight: 600;
+  color: #fff;
+}
+#sectionClient .clentsInfoTextPhoto {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo {
+  width: 45%;
+  background-color: #140C1C;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 10px;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .logoAndPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .logoAndPhoto img {
+  width: 70px;
+  border-radius: 0px 0px 0px 70px;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .clentsInfoTextBoxs {
+  width: 100%;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .clentsInfoTextBoxs .iconBoxs i {
+  margin: 20px 0px;
+  font-size: 40px;
+  color: #8750F7;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .clentsInfoTextBoxs p {
+  color: #fff;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .clentsInfoTextBoxs h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+#sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .clentsInfoTextBoxs p {
+  font-size: 14px;
+}
+
+#blogsSection {
+  background-color: #13091B;
+}
+#blogsSection .setvicesTextHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#blogsSection .setvicesTextHeader h1 {
+  font-size: 45px;
+  color: #8750F7;
+}
+#blogsSection .setvicesTextHeader p {
+  width: 50%;
+  color: #fff;
+}
+#blogsSection .row .blogsTextAndPhoto {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+#blogsSection .row .blogsTextAndPhoto:hover img {
+  transform: scale(1.2);
+}
+#blogsSection .row .blogsTextAndPhoto:hover .dateBoxInfo .dateText p {
+  color: #fff;
+}
+#blogsSection .row .blogsTextAndPhoto img {
+  transition: 1s;
+  width: 100%;
+  border-radius: 20px;
+}
+#blogsSection .row .blogsTextAndPhoto .textBox {
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #7242D1;
+}
+#blogsSection .row .blogsTextAndPhoto .dateBoxInfo {
+  left: 15px;
+  bottom: 15px;
+  position: absolute;
+  background-color: #2A1454;
+  color: #fff;
+  width: 90%;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+#blogsSection .row .blogsTextAndPhoto .dateBoxInfo .dateText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#blogsSection .row .blogsTextAndPhoto .dateBoxInfo .dateText p {
+  transition: 1s;
+  color: #8750F7;
+  font-size: 15px;
+}
+#blogsSection .row .blogsTextAndPhoto .dateBoxInfo .dateText p i {
+  margin-right: 5px;
+}
+
+#formSections {
+  background-color: #050709;
+}
+#formSections .row form {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #140C1C;
+}
+#formSections .row form h1 {
+  color: #7242D1;
+}
+#formSections .row form p {
+  color: #fff;
+}
+#formSections .row form .row .inptText {
+  margin: 10px 0px;
+}
+#formSections .row form .row .inptText input {
+  padding: 10px;
+  background-color: #000;
+  color: gray;
+  border-radius: 5px;
+  border: solid 1px gray;
+  outline: #9f6df6;
+  font-weight: 600;
+}
+#formSections .row form select {
+  width: 95%;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+#formSections .row form textarea {
+  margin: 20px 0px;
+  width: 95%;
+  padding: 10px;
+  background-color: #000;
+  border-radius: 5px;
+}
+#formSections .row form button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(149, 100, 233) 0%, rgb(49, 34, 98) 87%);
+  border: none;
+  cursor: pointer;
+}
+#formSections .row .contactBoxs {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#formSections .row .contactBoxs .iconBoxs {
+  margin-right: 20px;
+}
+#formSections .row .contactBoxs .iconBoxs i {
+  height: 45px;
+  width: 45px;
+  color: #fff;
+  background-color: #623da2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#formSections .row .contactBoxs .contactBoxsText h3 {
+  transition: 1s;
+  cursor: pointer;
+}
+#formSections .row .contactBoxs .contactBoxsText:hover h3 {
+  color: #673CBF;
+}
+#formSections .row .contactBoxs .contactBoxsText p {
+  margin: 0px;
+}

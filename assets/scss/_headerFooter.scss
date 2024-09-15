@@ -1,0 +1,340 @@
+header {
+
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(26, 3, 28, 1) 58%, rgba(61, 48, 107, 1) 98%);
+
+    .topBox {
+        width: 90%;
+        padding: 20px 0px;
+        margin: 0 auto;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+
+        .logoTop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-wrap: wrap;
+            gap: 17px;
+
+            a {
+                color: #fff;
+
+                img {
+                    max-width: 50px;
+                }
+
+                font-size: 15px;
+            }
+        }
+
+
+
+        .navBtnTop {
+            display: flex;
+
+            a {
+                border: none;
+                width: 120px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 17px 35px;
+                color: #fff;
+                display: inline-block;
+                background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(149, 100, 233, 1) 0%, rgba(49, 34, 98, 1) 87%);
+
+
+            }
+
+            .topIcon {
+                margin: 10px;
+
+                i {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+
+    .container {
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-wrap: wrap;
+            gap: 17px;
+
+            a {
+                color: #fff;
+
+                img {
+                    max-width: 50px;
+                }
+
+                font-size: 15px;
+            }
+        }
+
+        .navMenu {
+            ul {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    margin: 14px;
+
+                    a {
+                        color: #fff;
+                        position: relative;
+
+                        &::before {
+                            top: 100%;
+                            left: 0;
+                            position: absolute;
+                            content: '';
+                            height: 3px;
+                            width: 0%;
+                            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(84, 48, 146, 1) 0%, rgba(50, 35, 100, 1) 59%);
+                            transform: 0px;
+                            transition: .5s ease;
+
+                        }
+
+                        &:hover::before {
+
+                            width: 100%;
+
+                        }
+                    }
+
+                    .homeDrop {
+                        position: relative;
+                        display: flex;
+                        width: 60px;
+                        gap: 2px;
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            height: 3px;
+                            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(84, 48, 146, 1) 0%, rgba(50, 35, 100, 1) 79%);
+                        }
+
+                        .twoSpan {
+                            display: none;
+                            width: 10px;
+                        }
+
+                        &:hover {
+                            .oneSpan {
+                                display: none;
+                            }
+
+                            .twoSpan {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .blogDrop {
+                        display: flex;
+                        width: 50px;
+                        gap: 2px;
+
+                        .twoSpan {
+                            display: none;
+                            width: 10px;
+                        }
+
+                        &:hover {
+                            .oneSpan {
+                                display: none;
+                            }
+
+                            .twoSpan {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .navBtn {
+            a {
+                border: none;
+                width: 120px;
+                height: 50px;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 17px 35px;
+                color: #fff;
+                display: inline-block;
+                background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(149, 100, 233, 1) 0%, rgba(49, 34, 98, 1) 87%);
+
+
+            }
+        }
+    }
+}
+
+// footer///
+
+footer {
+    background-color: #0F0715;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 17px;
+
+        a {
+            color: #fff;
+
+            img {
+                max-width: 60px;
+            }
+
+            font-size: 15px;
+        }
+
+
+        ul {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                margin: 17px;
+
+                a {
+                    color: #fff;
+                    position: relative;
+                    font-weight: 700;
+
+                    &::before {
+                        top: 100%;
+                        left: 0;
+                        position: absolute;
+                        content: '';
+                        height: 3px;
+                        width: 0%;
+                        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(84, 48, 146, 1) 0%, rgba(50, 35, 100, 1) 59%);
+                        transform: 0px;
+                        transition: .5s ease;
+
+                    }
+
+                    &:hover::before {
+
+                        width: 100%;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    p {
+        color: #7746DB;
+        cursor: pointer;
+        transition: 1s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width:992px) {
+    header .container {
+        display: none;
+    }
+
+    header .topBox {
+        display: flex;
+    }
+    header .topBox .navBtnTop a{
+        display: flex !important;
+    }
+    #heroSection .heroImg img {
+
+        width: 100%;
+    }
+
+}
+
+// mobile 
+@media (max-width:576px) {
+   
+
+    #blogsSection .row .blogsTextAndPhoto {
+        margin: 20px 0px;
+
+        img {
+            height: auto;
+        }
+    }
+
+    #sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .logoAndPhoto img {
+        width: 40px !important;
+    }
+
+    #sectionClient .clentsInfoTextPhoto .clentsBoxAllInfo .clentsInfoTextBoxs p {
+        font-size: 10px;
+    }
+
+    #sectionRecent .row .photoBoxAllInfo .photoBoxs {
+        margin: 20px 0px !important;
+    }
+
+    #heroSection .heroImg img {
+        width: 70% !important;
+    }
+
+    header .topBox .navBtnTop a {
+        display: none !important;
+    }
+    #programmingSection .programminText h1{
+        font-size: 30px !important;
+    }
+    #programmingSection .programminText i {
+        font-size: 20px !important;
+    }
+    #heroSection .row .heroTextAllBox h1 {
+        font-size: 40px !important;
+    }
+    #heroSection .row .heroTextAllBox .heroBtn button {
+        margin: 20px 0px;
+    }
+}
